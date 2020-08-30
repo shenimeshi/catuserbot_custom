@@ -118,7 +118,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                       "This is auto generated message from cat security service\n\n"
                      f"Hi buddy my master {DEFAULTUSER} haven't approved you yet. so ,"
                       "Leave your name,reason and 10k$ and hopefully you'll get a reply within 2 light years.\n\n"
-                      "**Send** `/start` ** so that my master can decide why you're here.**")
+                      "**Send** `/start` ** so that he can decide why you're here.**")
         if USER_BOT_NO_WARN == message_text:
             # userbot's should not reply to other userbot's
             # https://core.telegram.org/bots/faq#why-doesn-39t-my-bot-see-messages-from-other-bots
@@ -175,22 +175,22 @@ if Var.PRIVATE_GROUP_ID is not None:
         catid = chat_id
         if PMPERMIT_PIC:
             if Config.CUSTOM_PMPERMIT_TEXT:
-                USER_BOT_NO_WARN = (Config.CUSTOM_PMPERMIT_TEXT + '\n\n' + "**Send** `/start` ** so that my master can decide why you're here.**")
+                USER_BOT_NO_WARN = (Config.CUSTOM_PMPERMIT_TEXT + '\n\n' + "**Send** `/start` ** so that he can decide why you're here.**")
             else:
                 USER_BOT_NO_WARN = ("This is auto generated message from cat security service\n\n"
-                     f"Hi buddy my master {DEFAULTUSER} haven't approved you yet. so ,"
+                     f"Hi buddy my boss {DEFAULTUSER} haven't approved you yet. so ,"
                       "Leave your name,reason and 10k$ and hopefully you'll get a reply within 2 light years.\n\n"
-                      "**Send** `/start` ** so that my master can decide why you're here.**")
+                      "**Send** `/start` ** so that he can decide why you're here.**")
             r = await event.reply( USER_BOT_NO_WARN , file = PMPERMIT_PIC)
         else:
             if Config.CUSTOM_PMPERMIT_TEXT:
-                USER_BOT_NO_WARN = (Config.CUSTOM_PMPERMIT_TEXT + '\n\n' + "**Send** `/start` ** so that my master can decide why you're here.**")
+                USER_BOT_NO_WARN = (Config.CUSTOM_PMPERMIT_TEXT + '\n\n' + "**Send** `/start` ** so that he can decide why you're here.**")
             else:
                 USER_BOT_NO_WARN = (f"[──▄█▀█▄─────────██ \n▄████████▄───▄▀█▄▄▄▄ \n██▀▼▼▼▼▼─▄▀──█▄▄ \n█████▄▲▲▲─▄▄▄▀───▀▄ \n██████▀▀▀▀─▀────────▀▀](tg://user?id={catid})\n\n"
                       "This is auto generated message from cat security service\n\n"
-                     f"Hi buddy my master {DEFAULTUSER} haven't approved you yet. so ,"
+                     f"Hi buddy my boss {DEFAULTUSER} haven't approved you yet. so ,"
                       "Leave your name,reason and 10k$ and hopefully you'll get a reply within 2 light years.\n\n"
-                      "**Send** `/start` ** so that my master can decide why you're here.**")
+                      "**Send** `/start` ** so that he can decide why you're here.**")
             r = await event.reply(USER_BOT_NO_WARN)
         PM_WARNS[chat_id] += 1
         if chat_id in PREV_REPLY_MESSAGE:
